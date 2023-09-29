@@ -382,7 +382,7 @@ document.addEventListener("scroll", () => {
   const offsetTopWrapper = elmWrapperClipPath.offsetTop;
 
   if (
-    item && (item.name === "color-1" || item.name === "color-4")
+    item !== undefined && (item.name === "color-1" || item.name === "color-4")
   ) {
     if (percent >= 100) {
       document.body.style.background = bgColor14;
@@ -392,7 +392,7 @@ document.addEventListener("scroll", () => {
   }
 
   if (
-    item && (item.name === "color-2" || item.name === "color-3")
+    item !== undefined && (item.name === "color-2" || item.name === "color-3")
     ) {
     if (percent >= 100) {
       document.body.style.background = bgColorFull;
